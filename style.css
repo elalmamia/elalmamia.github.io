@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 990px;
+    margin: auto;
+    padding: auto;
+    margin-top: 120px;
+}
+.card{
+    position: relative;
+    border: 1px solid black;
+    padding: 44px;
+    width: 300px;
+    height: 500px;
+}
+.card-1{
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-2{
+    background: hsl(184, 100%, 22%);
+}
+.card-3{
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 30px 0;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+p{
+   line-height: 22px;
+   color: hsla(0, 0%, 100%, 0.75)
+}
+
+.btn{
+    font-size: 15px;
+    width: 150px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);   
+    position: absolute;
+    bottom: 3rem;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2{
+    color: hsl(184, 100%, 22%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+}
+.attribution { font-size: 11px; text-align: center; 
+margin-top: 40px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width: 970px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        width: 99vw;
+    }
+    .card{
+        height: 450px;
+        font-size: 14px;
+    }
+    .card-1{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .card-3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        
+    }
+  
+}
